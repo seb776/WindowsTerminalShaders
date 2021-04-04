@@ -15,6 +15,6 @@
 
 ## What is available
 * Fox shader
-|![crt1](Fox.png)|
+![crt1](Fox.png)
 * Stars shader
-|![crt1](Stars.png)|
+![crt1](Stars.png)
