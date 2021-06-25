@@ -16,5 +16,7 @@
 ## What is available
 * Fox shader
 ![crt1](Fox.png)
+*Solar System shader
+![crt1](SolarSystem.png)
 * Stars shader
 ![crt1](Stars.png)
