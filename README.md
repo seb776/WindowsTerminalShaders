@@ -18,5 +18,7 @@
 ![crt1](Fox.png)
 *Solar System shader
 ![crt1](SolarSystem.png)
+* Lost planet shader
+![crt1](LostPlanet.png)
 * Stars shader
 ![crt1](Stars.png)
