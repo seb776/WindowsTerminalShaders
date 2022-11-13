@@ -136,8 +136,8 @@ float3 rdr(float2 uv, float2 texUv)
     col = lerp(col, float3(1.000,0.761,0.239), sat(length(uv)-.1)*(1.-sat(_stars(uv*.8, float2(5.,5.))*shp*.3))*.7);
 	float4 color = shaderTexture.Sample(samplerState, texUv);
 	col = lerp(col, col*sunCol, sat(length(uv)));
-	float3 txtCol = lerp(float3(255, 223, 120)/255., float3(255, 120, 185)/255., sat(sin(Time+10.*length(uv))));
-	col = lerp(col*.75, sat(color.rgb*txtCol), sat(color.a));
+	float3 txtCol = .5+lerp(float3(255, 223, 120)/255., float3(255, 120, 185)/255., sat(sin(Time+10.*length(uv))));
+	col = lerp(col*.5, sat(color.rgb*txtCol), sat(color.a));
     return col;
 }
 
