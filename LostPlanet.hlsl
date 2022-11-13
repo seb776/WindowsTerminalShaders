@@ -157,12 +157,13 @@ float3 rdr(float2 uv)
  
 float4 mainImage(float2 tex) : TARGET
 {
+	float2 ouv = tex.xy*float2(1.,-1.)-float2(0.5,-0.5);
+	float2 uv = (tex.xy*float2(1.,-1.)-float2(0.5,-0.5))/(Resolution.xx/Resolution.xy);
 	float2 xy = tex.xy;
 	
 	float4 blurTextColor = float4(0.0,0.0,0.0,0.0);
     //float2 uv = (fragCoord-.5*iResolution.xy)/iResolution.xx;
-    float2 uv = 1.*xy*float2(1.,-1.)+float2(-.5,.5);
-	float2 ouv = uv;
+
 	float stp = .005;
     
     uv = floor(uv/stp)*stp;
